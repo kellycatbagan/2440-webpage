@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+  <head>
+    <meta lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Kelly Catbagan | Online Resume</title>
+
+    <!--BOOTSTRAP LINKS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--GOOGLE FONT LINKS-->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+    <!--CSS BEGINS HERE-->
+    <style>
+    body, html {
+    	height: 90%;
+	  	margin: 0;
+    	font-family: 'Maven Pro', sans-serif;
+    	background-color: #f7e6ff;
+    }
+    @media only screen and (max-width: 768px ) {
+    	.tablink {
+    		width: 100%;
+    	}
+		.col {
+			width: 100%;
+		}
+		#films {
+			width: 60%;
+			height: 60%; 
+		}
+		#music {
+			width: 70%;
+			height: 70%;
+		}
+    }
+    @media only screen and (min-width: 769px) {
+    	#books {
+    		width: 95%;
+    		height: 95%;
+    	}
+    }
+    #welcome {
+        font-size: 5em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    #sitePic {
+        margin-top: 2%;
+        margin-left: 12%;
+        margin-bottom: 2%;           
+    }
+    #introText {
+    	text-align: center;
+    	font-size: 1.75em;
+    }
+    .italic {
+        font-style: italic;
+    }
+    .inner {
+    	display: inline-block;
+    	width: 100%;
+    	margin-left: 2%;
+    	margin-right: 2%;
+
+    }
+    .center {
+    	text-align: center;
+    	margin: 2%;
+    	padding: 1%;
+    }
+    .space {
+    	margin: 2%;
+    }
+    #films {
+    	margin-top: 6%;
+    }
+
+    /*CSS button and tab styling inspired by w3schools.com tutorial */
+
+	/* Style tab links */
+	.tablink {
+	  margin: 0 auto;
+	  background-color: grey;
+	  color: white;
+	  float: left;
+	  border: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  font-size: 17px;
+	  width: 16%;
+	}
+
+	.tablink:hover {
+	  background-color: #777;
+	}
+
+	/* Style the tab content (and add height:100% for full page content) */
+	.tabcontent {
+	  color: #3d3d29;
+	  display: none;
+	  padding: 100px 20px;
+	  height: 100%;
+	  background-color: #ffcccc;
+	}
+
+    </style>
+
+  </head>
+
+  <body>
+
+	<!--JS BEGINS HERE-->
+	<script>
+	  /* JS for button and tab functions from w3schools.com tutorial */
+
+		function openPage(pageName, elmnt, color) {
+	    // Hide all elements with class="tabcontent" by default */
+	    var i, tabcontent, tablinks;
+	    tabcontent = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+
+	    // Remove the background color of all tablinks/buttons
+	    tablinks = document.getElementsByClassName("tablink");
+	    for (i = 0; i < tablinks.length; i++) {
+	        tablinks[i].style.backgroundColor = "";
+	    }
+
+	    // Show the specific tab content
+	    document.getElementById(pageName).style.display = "block";
+
+	    // Add the specific color to the button used to open the tab content
+	    elmnt.style.backgroundColor = color;
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+	    <!--IMG & INTRO-->
+	    <div class="inner">
+		    <img src="kelly.jpg"  id="sitePic" alt="pic of kelly catbagan" height="320px" width="240px" align="left">
+		    <div>
+		    <p id="welcome">WELCOME!</p><br>
+		    <p id="introText"> I'm Kelly Catbagan!<br> This is my webpage for CSIS 2440!<br>
+		    </p><br>
+			</div>
+		</div>
+
+	    <!--2440 ASSIGNMENT TABS AND LINKS-->
+	    <div class="container inner">
+
+	    <!--Buttons and Full Page Tabs Made from w3schools.com tutorial-->
+
+	    <!--ASSIGNMENT BUTTONS-->
+			<button class="tablink" onclick="openPage('Assignment1', this, '#990033')">Assignment 1</button>
+
+			<button class="tablink" onclick="openPage('Assignment2', this, '#990033')" id="defaultOpen">Assigment 2</button>
+
+			<button class="tablink" onclick="openPage('Assignment3', this, '#990033')">Assignment 3</button>
+
+			<button class="tablink" onclick="openPage('Assignment4', this, '#990033')">Assignment 4</button>
+
+			<button class="tablink" onclick="openPage('E-commerce', this, '#990033')" id="defaultOpen">E-commerce</button>
+
+			<button class="tablink" onclick="openPage('ClassExercises', this, '#990033')" id="defaultOpen">Class Exercises</button>
+		
+		<!--ASSIGMENT CONTENT-->
+			<div id="Assignment1" class="tabcontent">
+			  <h3>Assignment 1</h3>
+			  <p class="content">loading future assignment . . .</p>
+			</div>
+
+			<div id="Assignment2" class="tabcontent">
+			  <h3>Assignment 2</h3>
+			  <p class="content">loading future assignment . . .</p> 
+			</div>
+
+			<div id="Assignment3" class="tabcontent">
+			  <h3>Assignment 3</h3>
+			  <p class="content">loading future assignment . . .</p>
+			</div>
+
+			<div id="Assignment4" class="tabcontent">
+			  <h3>Assignment 4</h3>
+			  <p class="content">loading future assignment . . .</p>
+			</div>
+
+			<div id="E-commerce" class="tabcontent">
+			  <h3>E-commerce</h3>
+			  <p class="content">loading future assignment . . .</p> 
+			</div>
+
+			<div id="ClassExercises" class="tabcontent">
+			  <h3>Class Exercises</h3>
+			  <p class="content">loading future assignment . . .</p> 
+			</div>
+		</div>
+	<!--ABOUT ME SECTION-->
+		<div class="center">
+		    <div class="container-fluid row">
+		        <div class="container col col-sm-6">
+		            <h3>Interests</h3>
+		            	Yoga<br>
+	                    Board Games<br>
+	                    Computer Science<br>
+	                    Early childhood education<br>
+		                <img src="above.jpg" class="space" height="80%" width="70%">
+		        </div>
+		        <div class="container col col-sm-6">
+		            <h3>Hobbies</h3>
+		            	Sewing<br>
+		                Gardening<br>
+		                Manga and Graphic Novels<br>
+		                Spanish, ASL, language learning<br>
+		                <img src="cactus.jpg" class="space" height="65%" width="65%">
+		        </div>
+		    </div>
+		    <div class="container-fluid row">
+		        <div class="container col col-sm-4">
+		            <h3>Books</h3>
+		            	Bug Jargal <span class="italic"> Victor Hugo</span><br>
+		            	Paradise Lost, <span class="italic">John Milton</span><br>
+		                Akira series, <span class="italic">Katsuhiro Otomo</span><br>
+		                <img src="tetsuo.jpg" id="books" class="space">
+		        </div>
+		        <div class="container col col-sm-4">
+		            <h3>Films</h3>
+		                    La La Land, <span class="italic">Damien Chazelle</span><br>
+		                    Moonrise Kingdom, <span class="italic">Wes Anderson</span><br>
+		                <img src="raven.png" class="space" id="films" height="75%" width="75%">
+		        </div>
+		        <div class="container col col-sm-4">
+		            <h3>Music</h3>
+	            		90s/2000s throwbacks<br>
+	                    Affirms Glinting, <span class="italic">Frankie Cosmos</span><br>
+	                    Le Carnaval des Animaux, <span class="italic">Camille Saint-Sa&euml;ns</span><br>
+		                <img src="affirms.jpg" class="space" id="music" height="75%" width="75%">
+		        </div>
+		    </div>
+	    </div>
+	</body>
+</html>
